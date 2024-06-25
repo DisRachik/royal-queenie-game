@@ -3,6 +3,8 @@
 @import './ui/title';
 @import './ui/button';
 
+@import './base';
+
 @import './layout/header';
 @import './layout/footer';
 
@@ -13,6 +15,7 @@
 @import './sections/how-play';
 
 @import './sections/policy';
+@import './sections/terms';
 
 :root {
   font-family: Montserrat, Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -21,8 +24,8 @@
   line-height: normal;
   font-weight: 500;
 
-  color: #000000;
-  background-color: #ffffff;
+  color: $_main_text_color;
+  background-color: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

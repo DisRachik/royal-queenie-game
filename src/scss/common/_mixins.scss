@@ -1,24 +1,14 @@
 @use 'sass:math';
 @import './breakpoints';
 /*
-screen types: 
+screen types:
     mobile,
-    to-tablet
-    tablet,
     to-desktop
     desktop,
 */
 @mixin media($_screen) {
   @if $_screen == mobile {
     @media screen and (min-width: $mobile) {
-      @content;
-    }
-  } @else if $_screen == to-tablet {
-    @media screen and (max-width: $to-tablet) {
-      @content;
-    }
-  } @else if $_screen == tablet {
-    @media screen and (min-width: $tablet) {
       @content;
     }
   } @else if $_screen == to-desktop {
@@ -38,4 +28,10 @@ screen types:
   $result: math.div($_lnh, $_fsz);
 
   line-height: math.div(math.round($result * 100), 100);
+}
+
+@mixin animated($property...) {
+  transition-property: $property;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

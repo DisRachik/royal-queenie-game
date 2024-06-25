@@ -1,0 +1,26 @@
+%title {
+  color: $_title_color;
+  text-align: center;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: 1000;
+}
+
+.page-title {
+  @extend %title;
+
+  font-size: 46px;
+
+  @include media(desktop) {
+    font-size: 86px;
+  }
+}
+
+.section-title {
+  @extend %title;
+
+  font-size: 36px;
+
+  @include media(desktop) {
+    font-size: 56px;
+  }
+}
