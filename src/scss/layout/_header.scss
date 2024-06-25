@@ -11,17 +11,29 @@
     margin: 0 auto;
 
     @include media(desktop) {
-      background: linear-gradient(180deg, #f59620 0%, #f6f4ef 100%);
+      background: linear-gradient(
+        180deg,
+        #f59620 0%,
+        rgba(246, 244, 239, 0.3) 100%
+      );
     }
   }
 
   &--container {
     position: relative;
+    height: 88px;
     padding: 16px;
 
     overflow: hidden;
 
-    &.open {
+    @include animated(height);
+
+    @include media(desktop) {
+      height: 104px;
+      padding: 24px 0;
+    }
+
+    &.is-open {
       height: 100dvh;
     }
   }
@@ -68,7 +80,7 @@
     flex-direction: column;
     gap: 40px;
 
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   &__link {
@@ -84,7 +96,7 @@
     }
   }
 
-  &.open {
+  &.is-open {
     transform: translate(0);
     z-index: 9998;
   }
@@ -144,7 +156,7 @@
     }
   }
 
-  &.open {
+  &.is-open {
     .burger-menu__line {
       &:nth-child(1) {
         transform: translateY(4px) rotate(-45deg);
