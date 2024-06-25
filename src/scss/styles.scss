@@ -1,5 +1,18 @@
-@import './header.scss';
-@import './vite-promo.scss';
+@import './ui/section';
+@import './ui/container';
+@import './ui/title';
+@import './ui/button';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './sections/hero';
+@import './sections/reviews';
+@import './sections/gallery';
+@import './sections/about';
+@import './sections/how-play';
+
+@import './sections/policy';
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
