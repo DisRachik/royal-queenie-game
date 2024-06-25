@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+
+  padding: 16px 56px;
+
+  background-color: $_button_bg_color;
+  color: $_secondary_white_text_color;
+  border-radius: 16px;
+
+  &__text {
+    font-size: 11px;
+
+    & span {
+      display: block;
+
+      margin-top: 4px;
+
+      font-family: 'Sofia Sans', sans-serif;
+      font-size: 22px;
+      font-weight: 700px;
+    }
+  }
+}
