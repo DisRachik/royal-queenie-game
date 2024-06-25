@@ -8,10 +8,12 @@
 .page-title {
   @extend %title;
 
-  font-size: 46px;
+  margin-bottom: 40px;
+
+  font-size: 36px;
 
   @include media(desktop) {
-    font-size: 86px;
+    font-size: 56px;
   }
 }
 
