@@ -1,0 +1,33 @@
+.about__wrap {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.about__inner-wrap {
+  max-width: 480px;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    max-width: 480px;
+    margin-bottom: 0px;
+  }
+}
+
+.about__title {
+  @include media(desktop) {
+    text-align: left;
+
+    margin-bottom: 80px;
+  }
+}
+
+.about__text {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 56px;
+  }
+}
