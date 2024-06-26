@@ -17,7 +17,7 @@
   bottom: -100px;
   width: 320px;
   height: 310px;
-  background-image: url('../../img/hero/icons-group-mb@1x.webp');
+  background-image: url('../img/hero/icons-group-mb@1x.webp');
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateX(-50%);
@@ -27,20 +27,20 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url('../../img/hero/icons-group-mb@2x.webp');
+      background-image: url('../img/hero/icons-group-mb@2x.webp');
     }
   }
 
   @include media(desktop) {
     width: 100%;
-    background-image: url('../../img/hero/icons-group-ds@1x.webp');
+    background-image: url('../img/hero/icons-group-ds@1x.webp');
     z-index: 10;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url('../../img/hero/icons-group-ds@2x.webp');
+        background-image: url('../img/hero/icons-group-ds@2x.webp');
       }
     }
   }
