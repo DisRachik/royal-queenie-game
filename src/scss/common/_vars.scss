@@ -12,3 +12,44 @@ $_button_bg_color: #080615;
 $_red_color: #e3404b;
 
 $_box_shadow_review_card: inset 0px -1px 12.3px 0px rgba(0, 0, 0, 0.25);
+$_box_shadow_play_card: inset 2px 4px 16.1px 0px rgba(0, 0, 0, 0.25),
+  0px 4px 19.3px 0px #fafafa, 2px 4px 16.1px 0px rgba(0, 0, 0, 0.25),
+  0px 4px 19.3px 0px #fafafa;
+
+$_box_shadow_disclaimer_card: inset 0px 0px 53.3px 0px rgba(245, 245, 245, 0.72);
+
+$_linear_gradient_solve_card: linear-gradient(
+  84deg,
+  #f2840d 0%,
+  #fff788 122.27%
+);
+
+$_linear_gradient_strategic_card: linear-gradient(
+  82deg,
+  #a229cb 2.5%,
+  #5e4ec0 125.65%
+);
+
+$_linear_gradient_collect_card: linear-gradient(
+  83deg,
+  #8aad5e -23.2%,
+  #28563e 107.24%
+);
+
+$_linear_gradient_unlock_card: linear-gradient(
+  101deg,
+  #0168d6 -4.56%,
+  #7dc5f5 125.1%
+);
+
+$_linear_gradient_compete_card: linear-gradient(
+  101deg,
+  #e23f49 3.84%,
+  #ff6471 94.67%
+);
+
+$_linear_gradient_disclaimer_card: linear-gradient(
+  101deg,
+  #e23f49 3.84%,
+  #ff6471 94.67%
+);
