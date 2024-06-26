@@ -57,22 +57,43 @@
 
     <!-- Swiper-Pagination -->
     <div class="swiper-pagination">
-      <button type="button" class="swiper-button">
+      <button
+        type="button"
+        class="swiper-button"
+        aria-level="to the next slide"
+      >
         <svg width="24" height="24" class="swiper-button__icon">
           <use href="./svg-sprite.svg#icon-arrow-left"></use>
         </svg>
       </button>
 
       <div class="swiper-pagination__wrap">
-        <button type="button" class="swiper-pagination__bullet"></button>
+        <button
+          type="button"
+          class="swiper-pagination__bullet"
+          aria-label="first slide"
+        ></button>
         <button
           type="button"
           class="swiper-pagination__bullet swiper-pagination__bullet--active"
+          aria-label="second slide"
         ></button>
-        <button type="button" class="swiper-pagination__bullet"></button>
-        <button type="button" class="swiper-pagination__bullet"></button>
+        <button
+          type="button"
+          class="swiper-pagination__bullet"
+          aria-label="third slide"
+        ></button>
+        <button
+          type="button"
+          class="swiper-pagination__bullet"
+          aria-label="fourth slide"
+        ></button>
       </div>
-      <button type="button" class="swiper-button">
+      <button
+        type="button"
+        class="swiper-button"
+        aria-level="to the previous slide "
+      >
         <svg width="24" height="24" class="swiper-button__icon">
           <use href="./svg-sprite.svg#icon-arrow-right"></use>
         </svg>
