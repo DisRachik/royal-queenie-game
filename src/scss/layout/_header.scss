@@ -4,18 +4,17 @@
   left: 0;
   width: 100dvw;
 
+  z-index: 9997;
+
   font-family: Poppins, sans-serif;
+  background: $_main_bg_color;
 
   &__wrap {
     max-width: 1440px;
     margin: 0 auto;
 
     @include media(desktop) {
-      background: linear-gradient(
-        180deg,
-        #f59620 0%,
-        rgba(246, 244, 239, 0.3) 100%
-      );
+      background: linear-gradient(180deg, #f59620 0%, #f6f4ef 100%);
     }
   }
 

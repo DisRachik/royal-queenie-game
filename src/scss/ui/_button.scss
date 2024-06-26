@@ -1,4 +1,5 @@
 .button {
+  position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +13,8 @@
   border-radius: 16px;
   outline: none;
   border: 3px solid $_button_bg_color;
+
+  z-index: 20;
 
   @include animated(border);
 
