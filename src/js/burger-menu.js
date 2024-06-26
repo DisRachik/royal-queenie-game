@@ -14,7 +14,7 @@ const toggleMenu = () => {
 
 const closeMenu = e => {
   const isBurgerActive =
-    window.innerWidth <= 1180 || document.body.clientWidth <= 1180;
+    window.innerWidth <= 1220 || document.body.clientWidth <= 1220;
   if (e.target.classList.contains('nav__link') && isBurgerActive) toggleMenu();
 };
 
@@ -22,7 +22,7 @@ export const handleMenuToggle = () => {
   burgerMenuBtn.addEventListener('click', toggleMenu);
   burgerMenu.addEventListener('click', closeMenu);
 
-  window.matchMedia('(max-width: 1180px)').addEventListener('change', e => {
+  window.matchMedia('(max-width: 1220px)').addEventListener('change', e => {
     if (e.matches) return;
 
     burgerMenuBtn.setAttribute('aria-expanded', false);
