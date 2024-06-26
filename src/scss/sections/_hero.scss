@@ -1,0 +1,66 @@
+.hero {
+  position: relative;
+  padding-top: 128px;
+
+  @include media(desktop) {
+    padding-top: 104px;
+    h1 {
+      text-align: left;
+    }
+  }
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -100px;
+  width: 320px;
+  height: 310px;
+  background-image: url('../../img/hero/icons-group-mb@1x.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('../../img/hero/icons-group-mb@2x.webp');
+    }
+  }
+
+  @include media(desktop) {
+    width: 100%;
+    background-image: url('../../img/hero/icons-group-ds@1x.webp');
+    z-index: 10;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../../img/hero/icons-group-ds@2x.webp');
+      }
+    }
+  }
+}
+
+.hero__wrap {
+  @include media(desktop) {
+    display: flex;
+  }
+
+  & div {
+    max-width: 580px;
+  }
+}
+
+.hero__inner-wrap {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 40px;
+    margin-bottom: 0px;
+  }
+}

@@ -18,15 +18,18 @@
 }
 
 .section {
+  max-width: 1440px;
+  margin: 0 auto;
   padding-bottom: 64px;
 
   &__title {
     @extend %title;
-
+    margin-bottom: 40px;
     font-size: 46px;
   }
 
   &__text {
+    margin-bottom: 40px;
     &--black {
       color: $_accent_text_color;
     }
@@ -36,6 +39,7 @@
     padding-bottom: 80px;
 
     &__title {
+      margin-bottom: 56px;
       font-size: 86px;
     }
 
