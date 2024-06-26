@@ -23,7 +23,7 @@
 
   @include media(desktop) {
     max-width: 574px;
-    padding: 40px;
+    padding: 36px;
   }
 }
 
@@ -71,22 +71,22 @@
 
 .reviews-card__avatar1::before {
   @extend %avatar;
-  background-image: url('../../img/reviews/reviews-avatar1.webp');
+  background-image: url('../img/reviews/reviews-avatar1.webp');
 }
 
 .reviews-card__avatar2::before {
   @extend %avatar;
-  background-image: url('../../img/reviews/reviews-avatar2.webp');
+  background-image: url('../img/reviews/reviews-avatar2.webp');
 }
 
 .reviews-card__avatar3::before {
   @extend %avatar;
-  background-image: url('../../img/reviews/reviews-avatar3.webp');
+  background-image: url('../img/reviews/reviews-avatar3.webp');
 }
 
 .reviews-card__avatar4::before {
   @extend %avatar;
-  background-image: url('../../img/reviews/reviews-avatar4.webp');
+  background-image: url('../img/reviews/reviews-avatar4.webp');
 }
 
 .reviews-card__icon {
