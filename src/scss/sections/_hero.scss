@@ -32,6 +32,7 @@
   @include media(desktop) {
     width: 1440px;
     background-image: url('../../img/hero/icons-group-ds@1x.webp');
+    z-index: -1;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

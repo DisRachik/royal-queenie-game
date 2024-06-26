@@ -10,6 +10,10 @@
   background-color: $_button_bg_color;
   color: $_secondary_white_text_color;
   border-radius: 16px;
+  outline: none;
+  border: 3px solid $_button_bg_color;
+
+  @include animated(border);
 
   &__text {
     font-size: 11px;
@@ -22,6 +26,16 @@
       font-family: 'Sofia Sans', sans-serif;
       font-size: 22px;
       font-weight: 700px;
+    }
+  }
+
+  &:focus {
+    border: 3px solid $_red_color;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border: 3px solid $_red_color;
     }
   }
 }
