@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -34,9 +35,13 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  &:visited {
+    text-decoration: none;
+  }
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
 }
 
