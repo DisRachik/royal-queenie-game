@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/royal-queenie-game/assets/index-8c31f80a.js"></script>
-    <link rel="stylesheet" href="/royal-queenie-game/assets/index-b8edb5fd.css">
+    <script type="module" crossorigin src="/royal-queenie-game/assets/index-0ee4b8c8.js"></script>
+    <link rel="stylesheet" href="/royal-queenie-game/assets/index-90a440ed.css">
   </head>
   <body>
     <header class="header">
@@ -71,7 +71,7 @@
 
 
     <main>
-      <section class="section hero">
+      <section class="section hero" id="hero">
   <div class="container">
     <div class="hero__wrap">
       <div class="hero__inner-wrap">
@@ -87,7 +87,7 @@
           class="button"
           ><svg width="32" height="36" aria-label="logo play-market">
             <use
-              href="../img/svg-sprite.svg#icon-google-play"
+              href="./svg-sprite.svg#icon-google-play"
               class="button__icon"
             ></use>
           </svg>
@@ -97,21 +97,15 @@
 
       <picture>
         <source
-          srcset="
-            ../img/hero/hero-image-ds@1x.webp 1x,
-            ../img/hero/hero-image-ds@2x.webp 2x
-          "
+          srcset="/royal-queenie-game/assets/hero-image-ds@1x-431e5a17.webp 1x, /royal-queenie-game/assets/hero-image-ds@2x-419ef532.webp 2x"
           media="(min-width: 1220px)"
         />
         <source
-          srcset="
-            ../img/hero/hero-image-mb@1x.webp 1x,
-            ../img/hero/hero-image-mb@2x.webp 2x
-          "
+          srcset="/royal-queenie-game/assets/hero-image-mb@1x-c8b84e90.webp 1x, /royal-queenie-game/assets/hero-image-mb@2x-caf415c5.webp 2x"
           media="(max-width: 1219.98px)"
         />
         <img
-          src="../img/hero/hero-image-ds@2x.webp"
+          src="/royal-queenie-game/assets/hero-image-ds@2x-419ef532.webp"
           alt="princess in front of the castle"
           width="601"
           height="689"
@@ -121,7 +115,7 @@
   </div>
 </section>
 
-      <section class="section reviews">
+      <section class="section reviews" id="reviews">
   <div class="container">
     <h2 class="page-title">Reviews</h2>
     <ul class="reviews-card__list">
@@ -131,7 +125,7 @@
             RoyalGamer42
           </h3>
           <svg width="152" height="24" class="reviews-card__icon">
-            <use href="/royal-queenie-game/assets/svg-sprite-6b3ea9be.svg#icon-rate"></use>
+            <use href="./svg-sprite.svg#icon-rate"></use>
           </svg>
           <p class="reviews-card__text section__text--black">
             "Absolutely enchanting! Each level brings new surprises and
@@ -145,7 +139,7 @@
             CrownCollector
           </h3>
           <svg width="152" height="24" class="reviews-card__icon">
-            <use href="/royal-queenie-game/assets/svg-sprite-6b3ea9be.svg#icon-rate"></use>
+            <use href="./svg-sprite.svg#icon-rate"></use>
           </svg>
           <p class="reviews-card__text section__text--black">
             "Perfect for puzzle lovers! The themes and graphics are top-notch."
@@ -158,7 +152,7 @@
             KnightErrant
           </h3>
           <svg width="152" height="24" class="reviews-card__icon">
-            <use href="/royal-queenie-game/assets/svg-sprite-6b3ea9be.svg#icon-rate"></use>
+            <use href="./svg-sprite.svg#icon-rate"></use>
           </svg>
           <p class="reviews-card__text section__text--black">
             "Challenging but fair. Keeps me coming back every day."
@@ -169,7 +163,7 @@
         <div class="reviews-card__thumb">
           <h3 class="reviews-card__title reviews-card__avatar4">PalacePat</h3>
           <svg width="152" height="24" class="reviews-card__icon">
-            <use href="/royal-queenie-game/assets/svg-sprite-6b3ea9be.svg#icon-rate"></use>
+            <use href="./svg-sprite.svg#icon-rate"></use>
           </svg>
           <p class="reviews-card__text section__text--black">
             "Fun and addictive! Love the historical theme mixed with engaging
@@ -182,7 +176,7 @@
     <div class="swiper-pagination">
       <button type="button" class="swiper-button">
         <svg width="24" height="24" class="swiper-button__icon">
-          <use href="/royal-queenie-game/assets/svg-sprite-6b3ea9be.svg#icon-arrow-left"></use>
+          <use href="./svg-sprite.svg#icon-arrow-left"></use>
         </svg>
       </button>
 
@@ -197,7 +191,7 @@
       </div>
       <button type="button" class="swiper-button">
         <svg width="24" height="24" class="swiper-button__icon">
-          <use href="/royal-queenie-game/assets/svg-sprite-6b3ea9be.svg#icon-arrow-right"></use>
+          <use href="./svg-sprite.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
@@ -205,7 +199,50 @@
 </section>
 
       
-      
+      <section class="section about" id="about">
+  <div class="about__wrap container">
+    <div class="about__inner-wrap">
+      <h2 class="page-title about__title">About this Game</h2>
+      <p class="about__text section__text--black">
+        "Queenie" is a captivating puzzle game that transports players into a
+        fantastical kingdom where strategy and wits reign supreme. Solve
+        challenging puzzles to help Queenie navigate through royal dilemmas and
+        claim her throne.
+      </p>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.mobowl.queenie.google"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="button"
+        ><svg width="32" height="36" aria-label="logo play-market">
+          <use
+            href="./svg-sprite.svg#icon-google-play"
+            class="button__icon"
+          ></use>
+        </svg>
+        <div class="button__text">GET IT ON <span> Google Play</span></div>
+      </a>
+    </div>
+
+    <picture>
+      <source
+        srcset="/royal-queenie-game/assets/about-image-ds@1x-a7eb6759.webp 1x, /royal-queenie-game/assets/about-image-ds@2x-5fc46057.webp 2x"
+        media="(min-width: 1220px)"
+      />
+      <source
+        srcset="/royal-queenie-game/assets/about-image-mb@1x-323da796.webp 1x, /royal-queenie-game/assets/about-image-mb@2x-dcf25c3a.webp 2x"
+        media="(max-width: 1219.98px)"
+      />
+      <img
+        src="/royal-queenie-game/assets/about-image-mb@2x-dcf25c3a.webp"
+        alt="game scene showing a castle in the background"
+        width="601"
+        height="689"
+      />
+    </picture>
+  </div>
+</section>
+
       
     </main>
 
