@@ -1,8 +1,10 @@
 .hero {
   position: relative;
+  padding-top: 128px;
 
-  h1 {
-    @include media(desktop) {
+  @include media(desktop) {
+    padding-top: 104px;
+    h1 {
       text-align: left;
     }
   }
@@ -30,9 +32,9 @@
   }
 
   @include media(desktop) {
-    width: 1440px;
+    width: 100%;
     background-image: url('../../img/hero/icons-group-ds@1x.webp');
-    z-index: -1;
+    z-index: 10;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
