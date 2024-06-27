@@ -101,6 +101,10 @@
         color: $_title_color;
       }
     }
+
+    &.active {
+      color: $_title_color;
+    }
   }
 
   &.is-open {
