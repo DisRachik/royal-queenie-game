@@ -3,8 +3,8 @@
     <h2 class="section__title">Reviews</h2>
 
     <div class="reviews-card__wrap">
-      <ul class="reviews-card__list">
-        <li class="reviews-card__item">
+      <ul class="reviews-card__list swiper-wrapper">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar1">
               RoyalGamer42
@@ -18,7 +18,7 @@
             </p>
           </div>
         </li>
-        <li class="reviews-card__item">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar2">
               CrownCollector
@@ -32,7 +32,7 @@
             </p>
           </div>
         </li>
-        <li class="reviews-card__item">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar3">
               KnightErrant
@@ -45,7 +45,7 @@
             </p>
           </div>
         </li>
-        <li class="reviews-card__item">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar4">PalacePat</h3>
             <svg width="152" height="24" class="reviews-card__icon">
@@ -57,51 +57,31 @@
           </div>
         </li>
       </ul>
-    </div>
+      <!-- Swiper-Pagination -->
+      <div class="swiper-pagination">
+        <button
+          type="button"
+          class="swiper-button reviews--swiper-button__prev"
+          aria-level="to the next slide"
+        >
+          <svg width="24" height="24" class="swiper-button__icon">
+            <use href="./svg-sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
 
-    <!-- Swiper-Pagination -->
-    <div class="swiper-pagination">
-      <button
-        type="button"
-        class="swiper-button"
-        aria-level="to the next slide"
-      >
-        <svg width="24" height="24" class="swiper-button__icon">
-          <use href="./svg-sprite.svg#icon-arrow-left"></use>
-        </svg>
-      </button>
-
-      <div class="swiper-pagination__wrap">
+        <div
+          class="swiper-pagination__wrap reviews--swiper-pagination__wrap"
+        ></div>
         <button
           type="button"
-          class="swiper-pagination__bullet swiper-pagination__bullet--active"
-          aria-label="first slide"
-        ></button>
-        <button
-          type="button"
-          class="swiper-pagination__bullet"
-          aria-label="second slide"
-        ></button>
-        <button
-          type="button"
-          class="swiper-pagination__bullet"
-          aria-label="third slide"
-        ></button>
-        <button
-          type="button"
-          class="swiper-pagination__bullet"
-          aria-label="fourth slide"
-        ></button>
+          class="swiper-button reviews--swiper-button__next"
+          aria-level="to the previous slide "
+        >
+          <svg width="24" height="24" class="swiper-button__icon">
+            <use href="./svg-sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
-      <button
-        type="button"
-        class="swiper-button"
-        aria-level="to the previous slide "
-      >
-        <svg width="24" height="24" class="swiper-button__icon">
-          <use href="./svg-sprite.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
