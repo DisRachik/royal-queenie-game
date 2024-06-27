@@ -31,6 +31,10 @@
     &--black {
       color: $_accent_text_color;
     }
+
+    &--policy {
+      margin-bottom: 0px;
+    }
   }
 
   @include media(desktop) {
@@ -46,6 +50,11 @@
       font-weight: 600;
 
       &--black {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      &--policy {
         font-size: 22px;
         font-weight: 600;
       }

@@ -1,0 +1,261 @@
+.terms {
+  padding-top: 128px;
+
+  @include media(desktop) {
+    padding-bottom: 160px;
+  }
+}
+
+.terms__item:not(:last-child) {
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    margin-bottom: 160px;
+  }
+}
+
+.terms__item:nth-child(1) {
+  position: relative;
+}
+
+.terms__item:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  bottom: -55px;
+  right: 60px;
+  width: 56px;
+  height: 60px;
+  background-image: url('../img/terms/star-color-48x51.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -239px;
+    right: -66px;
+    width: 115%;
+    height: 310px;
+    background-image: url('../img/terms/icons-group-introduction@1x.webp');
+  }
+}
+
+.terms__item:nth-child(2) {
+  position: relative;
+}
+
+.terms__item:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  bottom: -64px;
+  left: 12px;
+  width: 28px;
+  height: 30px;
+  background-image: url('../img/terms/star-color-28x30.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.terms__item:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  bottom: -36px;
+  right: 13px;
+  width: 29px;
+  height: 28px;
+  background-image: url('../img/terms/collect-29x28.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -96px;
+    right: 99px;
+    width: 51px;
+    height: 55px;
+    background-image: url('../img/terms/star-color-48x51.webp');
+  }
+}
+
+.terms__item:nth-child(3) {
+  position: relative;
+}
+
+.terms__item:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  bottom: -57px;
+  left: 37px;
+  width: 40px;
+  height: 39px;
+  background-image: url('../img/terms/compete-40x39.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -141px;
+    left: 37px;
+    width: 226px;
+    height: 134px;
+    background-image: url('../img/terms/icons-group-termination.webp');
+  }
+}
+
+.terms__item:nth-child(4) {
+  position: relative;
+}
+
+.terms__item:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  bottom: -64px;
+  left: 12px;
+  width: 38px;
+  height: 40px;
+  background-image: url('../img/terms/star-color-38x40.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -181px;
+    left: 740px;
+    width: 226px;
+    height: 134px;
+    background-image: url('../img/terms/icons-group-description.webp');
+  }
+}
+
+.terms__item:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  top: 59px;
+  right: 13px;
+  width: 38px;
+  height: 40px;
+  background-image: url('../img/terms/star-color-38x40.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.terms__item:nth-child(5) {
+  position: relative;
+}
+
+.terms__item:nth-child(5)::after {
+  content: '';
+  position: absolute;
+  bottom: -64px;
+  right: 12px;
+  width: 48px;
+  height: 51px;
+  background-image: url('../img/terms/star-color-48x51.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -130px;
+    right: 1122px;
+    width: 75px;
+    height: 80px;
+    background-image: url('../img/terms/star-color-48x51.webp');
+  }
+}
+
+.terms__item:nth-child(5)::before {
+  content: '';
+  position: absolute;
+  top: 90px;
+  right: 63px;
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/terms/solve-22x22.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.terms__item:nth-child(6) {
+  position: relative;
+}
+
+.terms__item:nth-child(6)::after {
+  content: '';
+  position: absolute;
+  bottom: -47px;
+  right: 36px;
+  width: 34px;
+  height: 33px;
+  background-image: url('../img/terms/compete-34x33.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -188px;
+    right: -66px;
+    width: 115%;
+    height: 310px;
+    background-image: url('../img/terms/icons-group-updates@1x.webp');
+  }
+}
+
+.terms__item:nth-child(6)::before {
+  content: '';
+  position: absolute;
+  top: 98px;
+  left: 5px;
+  width: 34px;
+  height: 33px;
+  background-image: url('../img/terms/unlock-34x33.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.terms__title {
+  position: relative;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    margin-bottom: 80px;
+  }
+}
+
+.terms__title::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 30px;
+  height: 32px;
+  background-image: url('../img/terms/star-color-30x32.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    top: 24px;
+    left: 992px;
+    width: 202px;
+    height: 180px;
+    background-image: url('../img/terms/icons-group-title.webp');
+  }
+}
+
+.terms__subtitle {
+  margin-bottom: 56px;
+
+  @include media(desktop) {
+    margin-bottom: 80px;
+    text-align: left;
+  }
+}
