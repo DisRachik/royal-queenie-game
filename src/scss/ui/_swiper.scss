@@ -8,27 +8,19 @@
   background-color: transparent;
   border: 2px solid $_accent_bg_color;
   border-radius: 23px;
-  fill: white;
-  color: white;
-  stroke: white;
+  color: $_title_color;
 
-  @include animated(background-color, fill);
-
-  &:hover,
-  &:focus {
-    background-color: $_accent_bg_color;
-    fill: white;
-  }
+  @include animated(background-color, color);
 
   &:focus {
     background-color: $_accent_bg_color;
-    fill: white;
+    color: $_secondary_white_text_color;
   }
 
   @media (hover: hover) {
     &:hover {
       background-color: $_accent_bg_color;
-      fill: white;
+      color: $_secondary_white_text_color;
     }
   }
 
@@ -40,6 +32,7 @@
 
 .swiper-button__icon {
   fill: currentColor;
+  // @include animated(fill);
   @include media(desktop) {
     width: 36px;
     height: 36px;
@@ -51,12 +44,11 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 44px;
+  margin-top: 40px;
 
   @include media(desktop) {
     max-width: 380px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 80px auto 0;
   }
 }
 
@@ -85,5 +77,8 @@
   @include media(desktop) {
     width: 16px;
     height: 16px;
+    &:nth-child(n + 3) {
+      display: none;
+    }
   }
 }

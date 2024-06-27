@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 16px;
   @include media(desktop) {
-    max-width: 1220px;
+    max-width: 1180px;
+    padding: 0;
   }
 }
