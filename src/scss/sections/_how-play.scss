@@ -1,0 +1,201 @@
+.section--how-play {
+  @include media(desktop) {
+    padding-top: 80px;
+    background-image: url('../img/star-color-ds.webp');
+    background-repeat: no-repeat;
+    background-position: right 7% top;
+    background-size: 135px 145px;
+  }
+}
+
+.play-card__list {
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 20px;
+
+    margin-bottom: 160px;
+  }
+}
+
+.play-card__item {
+  padding: 32px;
+  border-radius: 50px;
+
+  color: $_white_text_color;
+  box-shadow: $_box_shadow_play_card;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 32px;
+    padding: 67px 40px;
+  }
+}
+
+.play-card__item:not(:last-child) {
+  margin-bottom: 10px;
+  @include media(desktop) {
+    width: 580px;
+    height: 340px;
+    margin-bottom: 0px;
+  }
+}
+
+.play-card__item:last-child {
+  @include media(desktop) {
+    width: 100%;
+  }
+}
+
+.play-card__item--solve {
+  background: $_linear_gradient_solve_card;
+}
+
+.play-card__item--strategic {
+  background: $_linear_gradient_strategic_card;
+}
+
+.play-card__item--collect {
+  background: $_linear_gradient_collect_card;
+}
+
+.play-card__item--unlock {
+  background: $_linear_gradient_unlock_card;
+}
+
+.play-card__item--compete {
+  background: $_linear_gradient_compete_card;
+}
+
+.play-card__title {
+  margin-bottom: 24px;
+
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+
+  @include media(desktop) {
+    margin-bottom: 32px;
+    font-size: 36px;
+    font-weight: 1000;
+  }
+}
+
+%play-icon {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url('../img/tutorial/solve-icon.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    margin: 0px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.play-card__text {
+  @include media(desktop) {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+.play-card__icon--solve::after {
+  @extend %play-icon;
+  background-image: url('../img/tutorial/solve-icon.webp');
+}
+
+.play-card__icon--strategic::after {
+  @extend %play-icon;
+  background-image: url('../img/tutorial/strategic-icon.webp');
+}
+
+.play-card__icon--collect::after {
+  @extend %play-icon;
+  background-image: url('../img/tutorial/collect-icon.webp');
+}
+
+.play-card__icon--unlock::after {
+  @extend %play-icon;
+  background-image: url('../img/tutorial/unlock-icon.webp');
+}
+
+.play-card__icon--compete::after {
+  @extend %play-icon;
+  background-image: url('../img/tutorial/compete-icon.webp');
+}
+
+.disclaimer-card__wrap {
+  padding: 32px;
+  border-radius: 50px;
+
+  color: $_white_text_color;
+  background-color: $_accent_bg_color;
+  box-shadow: $_box_shadow_disclaimer_card;
+
+  @include media(desktop) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 90px;
+  }
+}
+
+.disclaimer-card__wrap::before {
+  @include media(desktop) {
+    position: absolute;
+    top: -75px;
+    left: 90px;
+    display: inline-block;
+    width: 148px;
+    height: 159px;
+    content: '';
+    background-image: url('../img/star-color-ds.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.disclaimer-card__inner-wrap {
+  @include media(desktop) {
+    max-width: 670px;
+  }
+}
+
+.disclaimer-card__title {
+  font-size: 36px;
+  font-weight: 1000;
+
+  font-family: 'Sofia Sans', sans-serif;
+
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 56px;
+  }
+}
+
+.disclaimer-card__text {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 22px;
+    font-weight: 600px;
+    margin-bottom: 0px;
+  }
+}
