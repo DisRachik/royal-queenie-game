@@ -1,0 +1,260 @@
+.policy {
+  padding-top: 144px;
+
+  @include media(desktop) {
+    padding-top: 184px;
+    padding-bottom: 160px;
+  }
+}
+
+.policy__title {
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    position: relative;
+    margin-bottom: 80px;
+  }
+}
+
+.policy__title::before {
+  @include media(desktop) {
+    content: '';
+    position: absolute;
+    top: -55px;
+    left: -31px;
+    width: 202px;
+    height: 180px;
+    background-image: url('../img/terms/icons-group-title.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.policy__subtitle {
+  margin-bottom: 56px;
+
+  @include media(desktop) {
+    margin-bottom: 80px;
+    text-align: left;
+  }
+}
+
+.policy__item:not(:last-child) {
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    margin-bottom: 160px;
+  }
+}
+
+.policy__item:nth-child(3) {
+  & > p {
+    margin-bottom: 40px;
+  }
+}
+
+.policy__item:nth-child(1) {
+  position: relative;
+}
+
+.policy__item:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  bottom: -79px;
+  left: 10px;
+  width: 56px;
+  height: 60px;
+  background-image: url('../img/terms/star-color-56x60.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.policy__item:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  right: 26px;
+  width: 29px;
+  height: 28px;
+  background-image: url('../img/terms/collect-29x28.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -192px;
+    right: 150px;
+    width: 202px;
+    height: 180px;
+    background-image: url('../img/policy/icons-group-introduction.webp');
+  }
+}
+
+.policy__item:nth-child(2) {
+  position: relative;
+}
+
+.policy__item:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  bottom: -67px;
+  left: 10px;
+  width: 29px;
+  height: 28px;
+  background-image: url('../img/terms/unlock-34x33.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: 102px;
+    left: -52px;
+    width: 43px;
+    height: 43px;
+    background-image: url('../img/policy/solve-43x43.webp');
+  }
+}
+
+.policy__item:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  bottom: -65px;
+  right: -9px;
+  width: 56px;
+  height: 60px;
+  background-image: url('../img/terms/star-color-56x60.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: -134px;
+    left: 44px;
+    width: 56px;
+    height: 60px;
+    background-image: url('../img/terms/star-color-56x60.webp');
+  }
+}
+
+.policy__item:nth-child(3) {
+  position: relative;
+}
+
+.policy__item:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  top: 148px;
+  left: 10px;
+  width: 30px;
+  height: 32px;
+  background-image: url('../img/terms/star-color-56x60.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    top: 784px;
+    left: -65px;
+    width: 234px;
+    height: 120px;
+    background-image: url('../img/policy/icons-group-rights.webp');
+  }
+}
+
+.policy__item:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  bottom: -54px;
+  right: 6px;
+  width: 29px;
+  height: 28px;
+  background-image: url('../img/terms/collect-29x28.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    bottom: 200px;
+    right: -15px;
+    width: 51px;
+    height: 54px;
+    background-image: url('../img/terms/star-color-56x60.webp');
+  }
+}
+
+.policy__item:nth-child(4) {
+  position: relative;
+}
+
+.policy__item:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  top: 86px;
+  left: 18px;
+  width: 29px;
+  height: 28px;
+  background-image: url('../img/terms/solve-22x22.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.policy__item:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  top: 84px;
+  right: 16px;
+  width: 42px;
+  height: 44px;
+  background-image: url('../img/terms/star-color-56x60.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    top: 67pxpx;
+    right: -80px;
+    width: 115%;
+    height: 310px;
+    background-image: url('../img/terms/icons-group-updates@2x.webp');
+  }
+}
+
+.rights__list {
+  text-align: center;
+
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+}
+
+.rights__item {
+  @include media(desktop) {
+    width: 580px;
+    padding: 0 24px;
+  }
+}
+
+.rights__item:not(:last-child) {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 0px;
+  }
+}
+
+.rights__title {
+  margin-bottom: 24px;
+
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+
+  @include media(desktop) {
+    font-size: 25px;
+  }
+}
