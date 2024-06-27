@@ -1,3 +1,5 @@
-import { handleMenuToggle } from './js/burger-menu';
+import { handleMenuToggle, initNavigationHighlight } from './js';
 
 handleMenuToggle();
+
+initNavigationHighlight();

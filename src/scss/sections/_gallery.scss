@@ -1,0 +1,62 @@
+.section--gallery {
+  @include media(desktop) {
+    background-image: url('../img/star-color-ds.webp');
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+    background-size: 135px 145px;
+  }
+}
+
+.gallery {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-image: image-set(
+    url('../img/gallery/gallery-bg-mb@2x.webp') 2x,
+    url('../img/gallery/gallery-bg-mb@1x.webp') 1x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media(desktop) {
+    max-width: none;
+    padding-top: 254px;
+    padding-bottom: 254px;
+    background-image: image-set(
+      url('../img/gallery/gallery-bg-ds@2x.webp') 2x,
+      url('../img/gallery/gallery-bg-ds@1x.webp') 1x
+    );
+  }
+
+  &__wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    width: calc(288px * 4 + 20px * 3);
+
+    @include media(desktop) {
+      width: calc(280px * 8 + 20px * 7);
+    }
+  }
+
+  &__item {
+    width: 288px;
+    height: 493px;
+
+    @include media(to-desktop) {
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+
+    @include media(desktop) {
+      width: 280px;
+    }
+  }
+}
