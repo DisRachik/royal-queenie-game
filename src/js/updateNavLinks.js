@@ -4,7 +4,7 @@ export const updateNavLinks = () => {
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (href.startsWith('#')) {
-      link.setAttribute('href', '/index.html' + href);
+      link.setAttribute('href', '/' + href);
     }
   });
 };
