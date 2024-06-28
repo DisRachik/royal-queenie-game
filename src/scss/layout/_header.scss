@@ -13,19 +13,28 @@
     rgba(246, 244, 239, 0.5) 100%
   );
 
-  &__wrap {
-    max-width: 1440px;
-    margin: 0 auto;
-
-    @include media(desktop) {
-      background: linear-gradient(
-        180deg,
-        #f59620 0%,
-        #f6f4ef 80%,
-        rgba(246, 244, 239, 0.5) 100%
-      );
-    }
+  @include media(desktop) {
+    background: linear-gradient(
+      180deg,
+      #f59620 0%,
+      #f6f4ef 80%,
+      rgba(246, 244, 239, 0.5) 100%
+    );
   }
+
+  // &__wrap {
+  //   max-width: 1440px;
+  //   margin: 0 auto;
+
+  //   @include media(desktop) {
+  //     background: linear-gradient(
+  //       180deg,
+  //       #f59620 0%,
+  //       #f6f4ef 80%,
+  //       rgba(246, 244, 239, 0.5) 100%
+  //     );
+  //   }
+  // }
 
   &--container {
     position: relative;
