@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-// import glob from 'glob';
+import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
@@ -31,7 +31,7 @@ export default defineConfig(({ command }) => {
       injectHTML(),
       FullReload(['./src/**/**.html']),
       ViteImageOptimizer({
-        test: /\.(jpe?g|png|gif|tiff|webp|avif)$/i,
+        exclude: /^svg-sprite\.svg$/,
         png: {
           // https://sharp.pixelplumbing.com/api-output#png
           quality: 60,
@@ -42,6 +42,10 @@ export default defineConfig(({ command }) => {
         },
         jpg: {
           // https://sharp.pixelplumbing.com/api-output#jpeg
+          quality: 60,
+        },
+        webp: {
+          // https://sharp.pixelplumbing.com/api-output#webp
           quality: 60,
         },
       }),
