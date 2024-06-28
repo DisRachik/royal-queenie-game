@@ -12,13 +12,18 @@
 
   @include animated(background-color, color);
 
-  &:focus {
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):focus {
     background-color: $_accent_bg_color;
     color: $_secondary_white_text_color;
   }
 
   @media (hover: hover) {
-    &:hover {
+    &:not(:disabled):hover {
       background-color: $_accent_bg_color;
       color: $_secondary_white_text_color;
     }
@@ -32,7 +37,6 @@
 
 .swiper-button__icon {
   fill: currentColor;
-  // @include animated(fill);
   @include media(desktop) {
     width: 36px;
     height: 36px;
@@ -59,7 +63,7 @@
   gap: 16px;
 }
 
-.swiper-pagination__bullet {
+.swiper-pagination-bullet {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -69,7 +73,7 @@
   border-radius: 50%;
   border: 3px solid $_accent_bg_color;
 
-  &--active {
+  &-active {
     background-color: $_accent_bg_color;
     border: none;
   }

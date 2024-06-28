@@ -27,7 +27,7 @@ const observeSections = (observer, navLinks) => {
 
 export const initNavigationHighlight = (options = {}) => {
   const defaultOptions = {
-    rootMargin: '-50px 0px -50% 0px',
+    rootMargin: '-50% 0px -50% 0px',
     threshold: 0,
   };
 

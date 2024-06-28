@@ -4,8 +4,8 @@
       <h2 class="section__title">Gallery</h2>
 
       <div class="gallery__wrap">
-        <ul class="gallery__list">
-          <li class="gallery__item">
+        <ul class="gallery__list swiper-wrapper">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -22,7 +22,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -39,7 +39,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -56,7 +56,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -73,7 +73,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -90,7 +90,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -107,7 +107,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -124,7 +124,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="
@@ -141,51 +141,31 @@
             </picture>
           </li>
         </ul>
-      </div>
+        <!-- Swiper-Pagination -->
+        <div class="swiper-pagination">
+          <button
+            type="button"
+            class="swiper-button gallery--swiper-button__prev"
+            aria-level="to the next slide"
+          >
+            <svg width="24" height="24" class="swiper-button__icon">
+              <use href="./svg-sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
 
-      <!-- Swiper-Pagination -->
-      <div class="swiper-pagination">
-        <button
-          type="button"
-          class="swiper-button"
-          aria-level="to the next slide"
-        >
-          <svg width="24" height="24" class="swiper-button__icon">
-            <use href="./svg-sprite.svg#icon-arrow-left"></use>
-          </svg>
-        </button>
-
-        <div class="swiper-pagination__wrap">
+          <div
+            class="swiper-pagination__wrap gallery--swiper-pagination__wrap"
+          ></div>
           <button
             type="button"
-            class="swiper-pagination__bullet swiper-pagination__bullet--active"
-            aria-label="first slide"
-          ></button>
-          <button
-            type="button"
-            class="swiper-pagination__bullet"
-            aria-label="second slide"
-          ></button>
-          <button
-            type="button"
-            class="swiper-pagination__bullet"
-            aria-label="third slide"
-          ></button>
-          <button
-            type="button"
-            class="swiper-pagination__bullet"
-            aria-label="fourth slide"
-          ></button>
+            class="swiper-button gallery--swiper-button__next"
+            aria-level="to the previous slide "
+          >
+            <svg width="24" height="24" class="swiper-button__icon">
+              <use href="./svg-sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
-        <button
-          type="button"
-          class="swiper-button"
-          aria-level="to the previous slide "
-        >
-          <svg width="24" height="24" class="swiper-button__icon">
-            <use href="./svg-sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
