@@ -47,8 +47,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/royal-queenie-game/assets/index-98de9def.js"></script>
-    <link rel="stylesheet" href="/royal-queenie-game/assets/index-e9bab8ce.css">
+    <script type="module" crossorigin src="/royal-queenie-game/assets/index-38e8634d.js"></script>
+    <link rel="stylesheet" href="/royal-queenie-game/assets/index-d8cc3401.css">
   </head>
   <body>
     <header class="header">
@@ -155,8 +155,8 @@
     <h2 class="section__title">Reviews</h2>
 
     <div class="reviews-card__wrap">
-      <ul class="reviews-card__list">
-        <li class="reviews-card__item">
+      <ul class="reviews-card__list swiper-wrapper">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar1">
               RoyalGamer42
@@ -170,7 +170,7 @@
             </p>
           </div>
         </li>
-        <li class="reviews-card__item">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar2">
               CrownCollector
@@ -184,7 +184,7 @@
             </p>
           </div>
         </li>
-        <li class="reviews-card__item">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar3">
               KnightErrant
@@ -197,7 +197,7 @@
             </p>
           </div>
         </li>
-        <li class="reviews-card__item">
+        <li class="reviews-card__item swiper-slide">
           <div class="reviews-card__thumb">
             <h3 class="reviews-card__title reviews-card__avatar4">PalacePat</h3>
             <svg width="152" height="24" class="reviews-card__icon">
@@ -209,51 +209,31 @@
           </div>
         </li>
       </ul>
-    </div>
+      <!-- Swiper-Pagination -->
+      <div class="swiper-pagination">
+        <button
+          type="button"
+          class="swiper-button reviews--swiper-button__prev"
+          aria-level="to the next slide"
+        >
+          <svg width="24" height="24" class="swiper-button__icon">
+            <use href="./svg-sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
 
-    <!-- Swiper-Pagination -->
-    <div class="swiper-pagination">
-      <button
-        type="button"
-        class="swiper-button"
-        aria-level="to the next slide"
-      >
-        <svg width="24" height="24" class="swiper-button__icon">
-          <use href="./svg-sprite.svg#icon-arrow-left"></use>
-        </svg>
-      </button>
-
-      <div class="swiper-pagination__wrap">
+        <div
+          class="swiper-pagination__wrap reviews--swiper-pagination__wrap"
+        ></div>
         <button
           type="button"
-          class="swiper-pagination__bullet swiper-pagination__bullet--active"
-          aria-label="first slide"
-        ></button>
-        <button
-          type="button"
-          class="swiper-pagination__bullet"
-          aria-label="second slide"
-        ></button>
-        <button
-          type="button"
-          class="swiper-pagination__bullet"
-          aria-label="third slide"
-        ></button>
-        <button
-          type="button"
-          class="swiper-pagination__bullet"
-          aria-label="fourth slide"
-        ></button>
+          class="swiper-button reviews--swiper-button__next"
+          aria-level="to the previous slide "
+        >
+          <svg width="24" height="24" class="swiper-button__icon">
+            <use href="./svg-sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
-      <button
-        type="button"
-        class="swiper-button"
-        aria-level="to the previous slide "
-      >
-        <svg width="24" height="24" class="swiper-button__icon">
-          <use href="./svg-sprite.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
@@ -264,8 +244,8 @@
       <h2 class="section__title">Gallery</h2>
 
       <div class="gallery__wrap">
-        <ul class="gallery__list">
-          <li class="gallery__item">
+        <ul class="gallery__list swiper-wrapper">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card1@1x-fd7c493d.webp 1x, /royal-queenie-game/assets/gallery-card1@2x-d997b444.webp 2x"
@@ -279,7 +259,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card2@1x-16776cc3.webp 1x, /royal-queenie-game/assets/gallery-card2@2x-8cf40cee.webp 2x"
@@ -293,7 +273,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card3@1x-9cf3ba5a.webp 1x, /royal-queenie-game/assets/gallery-card3@2x-dd5d6a31.webp 2x"
@@ -307,7 +287,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card4@1x-e529fafb.webp 1x, /royal-queenie-game/assets/gallery-card4@2x-f9168630.webp 2x"
@@ -321,7 +301,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card5@1x-ecb9fd20.webp 1x, /royal-queenie-game/assets/gallery-card5@2x-6c28ff76.webp 2x"
@@ -335,7 +315,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card6@1x-e4c1f63c.webp 1x, /royal-queenie-game/assets/gallery-card6@1x-e4c1f63c.webp 2x"
@@ -349,7 +329,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card7@1x-704e6ca1.webp 1x, /royal-queenie-game/assets/gallery-card7@1x-704e6ca1.webp 2x"
@@ -363,7 +343,7 @@
             </picture>
           </li>
 
-          <li class="gallery__item">
+          <li class="gallery__item swiper-slide">
             <picture>
               <source
                 srcset="/royal-queenie-game/assets/gallery-card8@1x-b50aaa80.webp 1x, /royal-queenie-game/assets/gallery-card8@2x-913c13e5.webp 2x"
@@ -377,51 +357,31 @@
             </picture>
           </li>
         </ul>
-      </div>
+        <!-- Swiper-Pagination -->
+        <div class="swiper-pagination">
+          <button
+            type="button"
+            class="swiper-button gallery--swiper-button__prev"
+            aria-level="to the next slide"
+          >
+            <svg width="24" height="24" class="swiper-button__icon">
+              <use href="./svg-sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
 
-      <!-- Swiper-Pagination -->
-      <div class="swiper-pagination">
-        <button
-          type="button"
-          class="swiper-button"
-          aria-level="to the next slide"
-        >
-          <svg width="24" height="24" class="swiper-button__icon">
-            <use href="./svg-sprite.svg#icon-arrow-left"></use>
-          </svg>
-        </button>
-
-        <div class="swiper-pagination__wrap">
+          <div
+            class="swiper-pagination__wrap gallery--swiper-pagination__wrap"
+          ></div>
           <button
             type="button"
-            class="swiper-pagination__bullet swiper-pagination__bullet--active"
-            aria-label="first slide"
-          ></button>
-          <button
-            type="button"
-            class="swiper-pagination__bullet"
-            aria-label="second slide"
-          ></button>
-          <button
-            type="button"
-            class="swiper-pagination__bullet"
-            aria-label="third slide"
-          ></button>
-          <button
-            type="button"
-            class="swiper-pagination__bullet"
-            aria-label="fourth slide"
-          ></button>
+            class="swiper-button gallery--swiper-button__next"
+            aria-level="to the previous slide "
+          >
+            <svg width="24" height="24" class="swiper-button__icon">
+              <use href="./svg-sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
-        <button
-          type="button"
-          class="swiper-button"
-          aria-level="to the previous slide "
-        >
-          <svg width="24" height="24" class="swiper-button__icon">
-            <use href="./svg-sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
