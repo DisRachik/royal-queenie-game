@@ -7,13 +7,11 @@
 
 .page-title {
   @extend %title;
-
   margin-bottom: 40px;
-
-  font-size: 36px;
+  font-size: 46px;
 
   @include media(desktop) {
-    font-size: 56px;
+    font-size: 86px;
   }
 }
 
@@ -25,7 +23,7 @@
   &__title {
     @extend %title;
     margin-bottom: 40px;
-    font-size: 46px;
+    font-size: 36px;
   }
 
   &__text {
@@ -33,19 +31,33 @@
     &--black {
       color: $_accent_text_color;
     }
+
+    &--policy {
+      margin-bottom: 0px;
+    }
   }
 
   @include media(desktop) {
     padding-bottom: 80px;
 
     &__title {
-      margin-bottom: 56px;
-      font-size: 86px;
+      margin-bottom: 80px;
+      font-size: 56px;
     }
 
     &__text {
       font-size: 22px;
       font-weight: 600;
+
+      &--black {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      &--policy {
+        font-size: 22px;
+        font-weight: 600;
+      }
     }
   }
 }

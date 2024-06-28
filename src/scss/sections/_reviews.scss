@@ -1,15 +1,26 @@
-.reviews-card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.reviews {
+  padding-bottom: 84px;
 
   @include media(desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-bottom: 160px;
+  }
+}
+
+.reviews-card__wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.reviews-card__list {
+  display: flex;
+  width: calc(288px * 4 + 10px * 3);
+
+  @include media(desktop) {
+    width: calc(580px * 2 + 20px * 1);
   }
 }
 
 .reviews-card__thumb {
+  width: 288px;
   max-height: 282px;
   padding: 24px 24px 58px;
   text-align: center;
@@ -22,7 +33,7 @@
   border-radius: 50px;
 
   @include media(desktop) {
-    max-width: 574px;
+    width: 580px;
     padding: 36px;
   }
 }

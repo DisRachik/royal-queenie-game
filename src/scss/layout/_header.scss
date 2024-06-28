@@ -7,14 +7,23 @@
   z-index: 9997;
 
   font-family: Poppins, sans-serif;
-  background: $_main_bg_color;
+  background: linear-gradient(
+    180deg,
+    #f6f4ef 80%,
+    rgba(246, 244, 239, 0.5) 100%
+  );
 
   &__wrap {
     max-width: 1440px;
     margin: 0 auto;
 
     @include media(desktop) {
-      background: linear-gradient(180deg, #f59620 0%, #f6f4ef 100%);
+      background: linear-gradient(
+        180deg,
+        #f59620 0%,
+        #f6f4ef 80%,
+        rgba(246, 244, 239, 0.5) 100%
+      );
     }
   }
 
@@ -29,7 +38,7 @@
 
     @include media(desktop) {
       height: 104px;
-      padding: 24px 0;
+      padding: 24px 16px;
     }
 
     &.is-open {
@@ -92,6 +101,10 @@
       &:hover {
         color: $_title_color;
       }
+    }
+
+    &.active {
+      color: $_title_color;
     }
   }
 
