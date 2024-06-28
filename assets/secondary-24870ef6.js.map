@@ -1,0 +1,1 @@
+{"version":3,"file":"secondary-24870ef6.js","sources":["../../src/secondary.js"],"sourcesContent":["import { handleMenuToggle, updateNavLinks } from './js';\n\nupdateNavLinks();\n\nhandleMenuToggle();\n"],"names":["updateNavLinks","handleMenuToggle"],"mappings":"wDAEAA,IAEAC,EAAkB"}
